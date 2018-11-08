@@ -1,1 +1,1 @@
-# ci_project
+# CollaborativeIntelligence_project
