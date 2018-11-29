@@ -1,0 +1,277 @@
+﻿<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>A simple map</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script>
+        var berlin = $.ajax({
+            url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/Berlin.geojson",
+            dataType: "json",
+            success: console.log("Berlin data successfully loaded."),
+            error: function(xhr) {
+                alert('Berlin: ${xhr.statusText}');
+            }
+        });
+		
+		var trencin = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/Boundary2012_SK008L1_TRENCIN_clean.geojson",
+            dataType: "json",
+            success: console.log("Trencin data successfully loaded."),
+            error: function(xhr) {
+                alert('Trencin: ${xhr.statusText}');
+				}
+		});
+		
+		var hamburg = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_DE002L1_HAMBURG_clean.geojson",
+            dataType: "json",
+            success: console.log("Hamburg data successfully loaded."),
+            error: function(xhr) {
+                alert('Hamburg: ${xhr.statusText}');
+				}
+		});		
+		
+		var cologne = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_DE004L1_KOLN_clean.geojson",
+            dataType: "json",
+            success: console.log("Cologne data successfully loaded."),
+            error: function(xhr) {
+                alert('Cologne: ${xhr.statusText}');
+				}
+		});		
+		
+		var mainz = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_DE037L1_MAINZ_clean.geojson",
+            dataType: "json",
+            success: console.log("Mainz data successfully loaded."),
+            error: function(xhr) {
+                alert('Mainz: ${xhr.statusText}');
+				}
+		});
+		
+		var kl = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_DE044L1_KAISERSLAUTERN_clean.geojson",
+            dataType: "json",
+            success: console.log("Kl data successfully loaded."),
+            error: function(xhr) {
+                alert('Kl: ${xhr.statusText}');
+				}
+		});
+		
+		var celle = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_DE060L1_CELLE_clean.geojson",
+            dataType: "json",
+            success: console.log("Celle data successfully loaded."),
+            error: function(xhr) {
+                alert('Celle: ${xhr.statusText}');
+				}
+		});
+		
+		var fulda = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_DE065L1_FULDA_clean.geojson",
+            dataType: "json",
+            success: console.log("Fulda data successfully loaded."),
+            error: function(xhr) {
+                alert('Fulda: ${xhr.statusText}');
+				}
+		});
+		
+		var ulm = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_DE532L1_ULM_clean.geojson",
+            dataType: "json",
+            success: console.log("Ulm data successfully loaded."),
+            error: function(xhr) {
+                alert('Ulm: ${xhr.statusText}');
+				}
+		});
+		
+		var cottbus = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_DE539L1_COTTBUS_clean.geojson",
+            dataType: "json",
+            success: console.log("Cottbus data successfully loaded."),
+            error: function(xhr) {
+                alert('Cottbus: ${xhr.statusText}');
+				}
+		});
+		
+		var jena = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_DE547L2_JENA_clean.geojson",
+            dataType: "json",
+            success: console.log("Jena data successfully loaded."),
+            error: function(xhr) {
+                alert('Jena: ${xhr.statusText}');
+				}
+		});
+		
+		var tallinn = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_EE001L1_TALLINN_clean.geojson",
+            dataType: "json",
+            success: console.log("Tallinn data successfully loaded."),
+            error: function(xhr) {
+                alert('Tallinn: ${xhr.statusText}');
+				}
+		});
+		
+		var tartu = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_EE002L1_TARTU_clean.geojson",
+            dataType: "json",
+            success: console.log("Tartu data successfully loaded."),
+            error: function(xhr) {
+                alert('Tartu: ${xhr.statusText}');
+				}
+		});
+		
+		var narva = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_EE003L0_NARVA_clean.geojson",
+            dataType: "json",
+            success: console.log("Narva data successfully loaded."),
+            error: function(xhr) {
+                alert('Narva: ${xhr.statusText}');
+				}
+		});
+		
+		var athina = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_EL001L1_ATHINA_clean.geojson",
+            dataType: "json",
+            success: console.log("Athina data successfully loaded."),
+            error: function(xhr) {
+                alert('Athina: ${xhr.statusText}');
+				}
+		});
+		
+		var saloniki = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_EL002L1_THESSALONIKI_clean.geojson",
+            dataType: "json",
+            success: console.log("Saloniki data successfully loaded."),
+            error: function(xhr) {
+                alert('Saloniki: ${xhr.statusText}');
+				}
+		});
+		
+		var irakleio = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_EL004L1_IRAKLEIO_clean.geojson",
+            dataType: "json",
+            success: console.log("Irakleio data successfully loaded."),
+            error: function(xhr) {
+                alert('Irakleio: ${xhr.statusText}');
+				}
+		});
+		
+		
+		var larisa = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_EL005L1_LARISA_clean.geojson",
+            dataType: "json",
+            success: console.log("Larisa data successfully loaded."),
+            error: function(xhr) {
+                alert('Larisa: ${xhr.statusText}');
+				}
+		});
+		
+		
+		var ioannina = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_EL007L1_IOANNINA_clean.geojson",
+            dataType: "json",
+            success: console.log("Ioannina data successfully loaded."),
+            error: function(xhr) {
+                alert('Ioannina: ${xhr.statusText}');
+				}
+		});
+		
+		var kalamata = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_EL009L1_KALAMATA_clean.geojson",
+            dataType: "json",
+            success: console.log("Kalamata data successfully loaded."),
+            error: function(xhr) {
+                alert('Kalamata: ${xhr.statusText}');
+				}
+		});
+		
+		
+		
+		var paris = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_FR001L1_PARIS_clean.geojson",
+            dataType: "json",
+            success: console.log("Paris data successfully loaded."),
+            error: function(xhr) {
+                alert('Paris: ${xhr.statusText}');
+				}
+		});
+		
+		
+		var toulouse = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_FR004L2_TOULOUSE_clean.geojson",
+            dataType: "json",
+            success: console.log("Toulouse data successfully loaded."),
+            error: function(xhr) {
+                alert('Toulouse: ${xhr.statusText}');
+				}
+		});
+		
+		var havare = $.ajax({
+			url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_FR012L2_LE_HAVRE_clean.geojson",
+            dataType: "json",
+            success: console.log("Havare data successfully loaded."),
+            error: function(xhr) {
+                alert('Havare: ${xhr.statusText}');
+				}
+		});
+		
+		
+		
+		// Specify that this code should run once the county data request is complete
+        $.when(berlin, trencin, hamburg, cologne, mainz, kl, celle, fulda, ulm, cottbus, jena, tallinn, tartu, narva, athina, saloniki, irakleio, larisa,ioannina,kalamata,paris,toulouse,havare).done(function() {
+            var map = L.map('map')
+                .setView([37.857507, -85.632935], 7);
+            var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(map);
+            
+			// Add requested external GeoJSON to map
+            var kyBerlin = L.geoJSON(berlin.responseJSON).addTo(map);
+			var kyTrencin = L.geoJSON(trencin.responseJSON).addTo(map);
+			var kyHamburg = L.geoJSON(hamburg.responseJSON).addTo(map);
+			var kyCologne = L.geoJSON(cologne.responseJSON).addTo(map);
+			var kyMainz = L.geoJSON(mainz.responseJSON).addTo(map);
+			var kyKl = L.geoJSON(kl.responseJSON).addTo(map);
+			var kyCelle = L.geoJSON(celle.responseJSON).addTo(map);
+			var kyFulda = L.geoJSON(fulda.responseJSON).addTo(map);
+			var kyUlm = L.geoJSON(ulm.responseJSON).addTo(map);
+			var kyCottbus = L.geoJSON(cottbus.responseJSON).addTo(map);
+			var kyJena = L.geoJSON(jena.responseJSON).addTo(map);
+			var kyTallin = L.geoJSON(tallinn.responseJSON).addTo(map);
+			var kyTartu = L.geoJSON(tartu.responseJSON).addTo(map);
+			var kyNarva = L.geoJSON(narva.responseJSON).addTo(map);
+			var kyAthina = L.geoJSON(athina.responseJSON).addTo(map);
+			var kySaloniki = L.geoJSON(saloniki.responseJSON).addTo(map);
+			var kyIrakleio = L.geoJSON(irakleio.responseJSON).addTo(map);
+			var kyLarisa = L.geoJSON(larisa.responseJSON).addTo(map);
+			var kyIoannina = L.geoJSON(ioannina.responseJSON).addTo(map);
+			var kyKalamata = L.geoJSON(kalamata.responseJSON).addTo(map);
+			var kyparis = L.geoJSON(paris.responseJSON).addTo(map);
+			var kyToulouse = L.geoJSON(toulouse.responseJSON).addTo(map);
+			var kyHavare = L.geoJSON(havare.responseJSON).addTo(map);
+        });
+    </script>
+</body>
