@@ -1,0 +1,82 @@
+﻿<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>A simple map</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script>
+	   function getCountryColor(DN){
+		         if(DN == 0){
+				        return 'red';
+				 }else if(DN == 1){
+				        return 'black'
+				 }else if(DN == 2){
+				        return 'blue'
+				 }else if(DN == 3){
+				        return 'yellow'
+				 }else if(DN == 4){
+                        return 'gray'
+				 }else if(DN == 5){
+                        return 'pink'
+                 }else if(DN == 6){
+                        return 'green';			 
+				 }
+		}
+		
+		function countriesStyle(feature){
+		         return {
+				         fillColor: getCountryColor(feature.properties.DN),
+						 weight : 2,
+					     opacity : 1,
+					     color : 'white',
+					     dashArray : 3,
+					     fillOpacity : 0.7}
+		}
+	    
+		
+        var am = $.ajax({
+            url: "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Munster.geojson",
+            dataType: "json",
+            success: console.log("Am data successfully loaded."),
+            error: function(xhr) {
+                alert('Am: ${xhr.statusText}');
+            }
+        });
+		
+		
+		  $.when(am).done(function() {
+            var map = L.map('map')
+                .setView([37.857507, -85.632935], 7);
+            var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+                attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+                subdomains: 'abcd',
+                maxZoom: 19
+            }).addTo(map);
+			
+			var kyAM = L.geoJSON(am.responseJSON, {style:countriesStyle}
+			
+			).addTo(map);
+			map.fitBounds(kyAM.getBounds());
+			});
+	</script>
+</body>
+</html>
