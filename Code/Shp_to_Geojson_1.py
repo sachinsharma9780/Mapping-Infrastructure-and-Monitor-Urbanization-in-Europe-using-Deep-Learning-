@@ -1,10 +1,7 @@
 # Importing necessrary Libraries
 import gdal
-import cv2
 import subprocess
 import os
-import subprocess
-import webbrowser
 import glob
 
 # Converting shp file to kml
