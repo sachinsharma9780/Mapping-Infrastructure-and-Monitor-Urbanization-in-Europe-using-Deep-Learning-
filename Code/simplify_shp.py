@@ -8,8 +8,6 @@ Created on Wed Dec 12 14:10:58 2018
 import gdal
 import subprocess
 import os
-import subprocess
-import webbrowser
 import glob
 
 # Converting shp file to kml
