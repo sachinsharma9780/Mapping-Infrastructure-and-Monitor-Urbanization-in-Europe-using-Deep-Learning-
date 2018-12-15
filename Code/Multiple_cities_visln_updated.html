@@ -46,7 +46,7 @@
 
 var arr = [];
 //var url = "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/GeoJson_Files/Boundary2012_DE001L1_BERLIN_clean.geojson";
-for(var i=0;i<100;i++){
+for(var i=0;i<105;i++){
     url = "https://raw.githubusercontent.com/sachinsharma9780/ci_project/master/Geojson_updated/city_"+(i+1)+".geojson";
     arr[i] = abc(url);
 }
@@ -60,7 +60,7 @@ for(var i=0;i<100;i++){
 var kyArr = [] ;
 Promise.all(arr).then((res)=>{
     console.log(res[0]);
-    for(var j = 0; j < 100; j++){
+    for(var j = 0; j < 105; j++){
         kyArr.push(L.geoJSON(res[j]).addTo(map));
     }
     console.log("hello");
