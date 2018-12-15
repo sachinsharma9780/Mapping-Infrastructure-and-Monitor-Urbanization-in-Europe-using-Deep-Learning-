@@ -62,4 +62,4 @@ subprocess.call('git push')
 
 
 # Opening file on webbrowser
-webbrowser.open_new_tab('Multiple_cities_visln_updated.html') 
+webbrowser.open_new_tab('Geotif_shp_geoJson_Visualisation.html') 
