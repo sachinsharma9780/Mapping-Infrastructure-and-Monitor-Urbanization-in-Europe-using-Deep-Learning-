@@ -46,7 +46,7 @@ shp_to_GeoJson(parsed_args.inputDirectory)
 #subprocess.call('cd Geojson_updated', shell=True)
 
 subprocess.call('git add *.geojson', shell=True)
-subprocess.call('git commit -m "Geojso_File"')
+subprocess.call('git commit -m "Geojson_File"')
 subprocess.call('git push')
 
 
