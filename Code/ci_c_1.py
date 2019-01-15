@@ -61,7 +61,7 @@ def img_array(paths):
 for pths in paths:
     img_array(pths)
 
-# Getting the list of max pixel value in each image
+# Getting the list of max pixel value from each image
 max_pixel_val = []
 def max_pixel(data):
     max_pixel_val.append(np.amax(data))
