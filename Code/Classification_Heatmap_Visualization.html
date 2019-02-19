@@ -1,0 +1,99 @@
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <title>Classification Heatmap Visualization</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.3/dist/leaflet.css" />
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+        }
+        #map {
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="map"></div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/leaflet@1.0.3/dist/leaflet.js"></script>
+    <script>
+	    function getCountryColor(dn){
+		         
+				 if(dn == 121){
+				        return 'black'
+				 }else if(dn == 127){
+				        return 'brown'
+				 }else if(dn == 41){
+				        return 'blue'
+				 }else if(dn == 241){
+                        return 'red'
+				 }else if(dn ==205){
+                        return 'yellow'
+                 }
+				 else if(dn ==255){
+				 return 'green'
+				 }
+				 else if(dn == 0){
+				 return 'gray'}
+		}
+		
+		function countriesStyle(feature){
+		         return {
+				         fillColor: getCountryColor(feature.properties.DN),
+						 weight : 2,
+					     opacity : 1,
+					     color : 'white',
+					     dashArray : 3,
+					     fillOpacity : 0.7}
+		}
+	    
+        var abc = function(url){
+            return new Promise((resolve,reject)=>{
+            $.ajax({
+                url:url,
+                dataType: "json",
+                success:function(success){
+                // console.log(success);
+                    resolve(success);
+                },
+                error:function(error){
+                    //console.log(err);
+                    reject(error);
+                }
+            })
+    })
+
+
+}		
+	
+var arr = [];
+for(var i=3; i<8; i++){
+    var url = "https://raw.githubusercontent.com/sachinsharma9780/Mapping-Infrastructure-and-Monitor-Urbanization-in-Europe-using-Deep-Learning-/master/Class_Heatmap_visln/city_"+(i)+".geojson";
+    arr[i] = abc(url);
+}
+		
+		
+    var map = L.map('map').setView([37.857507, -85.632935], 7);
+    var basemap = L.tileLayer('http://{s}.basemaps.cartocdn.com/light_nolabels/{z}/{x}/{y}.png', {
+        attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a> &copy; <a href="http://cartodb.com/attributions">CartoDB</a>',
+        subdomains: 'abcd',
+        maxZoom: 19
+    }).addTo(map);
+var kyArr = [];
+Promise.all(arr).then((res)=>{
+    console.log(res[3]);
+	for(var j = 3; j<8; j++){
+	    kyArr.push(L.geoJSON(res[j], {style:countriesStyle}).addTo(map));
+	}
+	map.fitBounds(kyArr[3].getBounds());
+});
+	</script>
+</body>
+</html>
