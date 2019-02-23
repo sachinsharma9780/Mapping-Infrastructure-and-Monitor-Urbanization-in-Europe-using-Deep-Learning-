@@ -10,7 +10,7 @@ import subprocess
 import os
 import glob
 
-# Converting shp file to kml
+# Simplifying Shape files
 def shp_to_simple_shp(path):
     os.chdir(path)
     for file in glob.glob("*.shp"):
