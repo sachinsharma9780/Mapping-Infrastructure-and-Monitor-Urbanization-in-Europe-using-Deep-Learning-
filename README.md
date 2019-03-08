@@ -1,1 +1,2 @@
-# CollaborativeIntelligence_project
+# Collaborative_Intelligence_Project at DFKI: Mapping Infrastructure and Monitor Urbanization in Europe
+Description: An automated mapping and monitoring of urban enviornments through an AI-based analysis using orbital or airborne remote sensed data is of crucial importance to urban areas. In this project, I have used satellite or aerial imagery and near-state-of-the-art deep learning methods to map urban areas, in particular infrastructure(eg. residential houses, streets, industry).  
