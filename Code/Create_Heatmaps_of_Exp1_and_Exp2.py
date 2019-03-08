@@ -174,16 +174,5 @@ for t, p, g in zip(tifimgs, probimgs, georef):
     print(':$-Georef tif imgs path are: '+t, ':$-Probimgs in which to add georef are: '+p, ':$-Path to store output georef imgs: '+g)
     adding_georef(t, p, g)
     
-    
-
-
-def mergepred(pred_path):
-    os.chdir(args.georef)
-    gdal.BuildVRT(os.path.join(os.path.dirname(pred_path),"mosaic.vrt"), glob.glob(os.path.join(pred_path,'*.tif')))
-    os.chdir('/home/sachin_sharma/Desktop/Full_Automation_Code')
-    print('current dir is : '+pred_path)
-    subprocess.check_output(['python','gdal_translate.py',os.path.join(os.path.dirname(pred_path),"mosaic.vrt"), os.path.join(os.path.dirname(pred_path),"pred_merge.tif")])
    
-# creating heatmap(Probability or Classification Heatmap)
-mergepred(args.georef)
   
