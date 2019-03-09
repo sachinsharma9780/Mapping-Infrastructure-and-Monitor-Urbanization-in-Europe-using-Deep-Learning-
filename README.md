@@ -30,6 +30,7 @@ Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-ac
 ![Classes](https://user-images.githubusercontent.com/40523048/54064993-9c471d80-421a-11e9-9251-d80dc10dcebb.JPG)
 
 Note: step 5 and 6 can be achieved using class_map_automation(1).py file.
+
 7. Now we'll add georeference to those images which can be done using adding_georef_automation(1).py
 8. Finally, Merge all Classfication maps to make one big image which will look as following: 
 
