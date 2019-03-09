@@ -41,4 +41,5 @@ Note: step 5 and 6 can be achieved using class_map_automation(1).py file.
 Note: For generating Probability Heatmaps all data preprocessing steps are same just in 6th step I have used create_prob_maps_of_n_tiff_files.py to generate probability heatmaps.
 
 Probability Heatmap of Graz city looks like following where darker colors represents prediction of particular class with very high probability like 99%(i.e. Dark blue color, blue), light colors like yellow represent prediction with low probability 60%-70%(yellow, orange):
+
 ![prob_heatmap](https://user-images.githubusercontent.com/40523048/54076734-dc57e000-42ae-11e9-9292-57a7ca2202f8.JPG)
