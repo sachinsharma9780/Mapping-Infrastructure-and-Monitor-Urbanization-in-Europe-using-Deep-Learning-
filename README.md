@@ -14,4 +14,4 @@ Note about Gdal: The Geospatial Data Abstraction Library is a computer software 
 Install Gdal using: conda install gdal
 
 # Usage:
-*Bullet 
+*  
