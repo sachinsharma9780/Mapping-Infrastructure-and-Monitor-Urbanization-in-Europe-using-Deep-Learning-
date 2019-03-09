@@ -25,3 +25,4 @@ Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-ac
 4. Now we have a big tiff image(Ground Truth) of 10k*10k pixels, break this image into a small patches of 64*64 pixels as done in sliding_window_on_Big_Tiff_image.py file
 5. Give these cropped images to train classifier to get the predictions:
 ![cnn](https://user-images.githubusercontent.com/40523048/53294039-921b2d00-37df-11e9-9fde-04bfc92acc8b.JPG)
+6. A unique color image is created for each class, following is the color coding  
