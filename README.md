@@ -23,13 +23,14 @@ Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-ac
 2. Train your classifier with this dataset using the techniques describe in the blog. Script for this is available in code section under the name Ci_a_1.py
 3. Create Hierarchy of folders using creates_folder_hierarchy.py file to store the results in appropriate folders.
 4. Now we have a big tiff image(Ground Truth) of 10k 10k pixels, break this image into a small patches of 64*64 pixels as done in sliding_window_on_Big_Tiff_image.py file
-5. Give these cropped images to train classifier to get the predictions:
+5. Give these cropped images to already trained classifier to get the predictions on 9 classes:
 ![cnn](https://user-images.githubusercontent.com/40523048/53294039-921b2d00-37df-11e9-9fde-04bfc92acc8b.JPG)
 6. A unique color image is created for each class, following is the color coding:  
 
 ![Classes](https://user-images.githubusercontent.com/40523048/54064993-9c471d80-421a-11e9-9251-d80dc10dcebb.JPG)
 
-Note: step 5 and 6 can be achieved using class_map_automation(1).py file.
+Note: 1. Buildup class is collection of images from Residential and Intdustrial area.
+2. step 5 and 6 can be achieved using class_map_automation(1).py file.
 
 7. Now we'll add georeference to these images which can be done using adding_georef_automation(1).py
 8. Finally, Merge all Classfication prediction maps to make one big image using merge_class_maps_and_prob_maps.py which will look like as following, below are the predictions done on Graz city of Austria: 
