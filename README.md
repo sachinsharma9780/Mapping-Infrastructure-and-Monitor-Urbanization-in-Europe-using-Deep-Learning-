@@ -35,4 +35,6 @@ Note: step 5 and 6 can be achieved using class_map_automation(1).py file.
 8. Finally, Merge all Classfication prediction maps to make one big image using merge_class_maps_and_prob_maps.py which will look as following: 
 
 ![Graz_heatmap](https://user-images.githubusercontent.com/40523048/54065158-b124b080-421c-11e9-96fd-1f4a9f8e1e3e.JPG)
+
 9. You can retrive all Classification and Probability Heatmaps stored in different folders using retrieve_heatmaps.py file.
+
