@@ -14,4 +14,8 @@ Note about Gdal: The Geospatial Data Abstraction Library is a computer software 
 Install Gdal using: conda install gdal
 
 # Usage:
-*  
+* Getting state of the art results on EuroSAT dataset is really important since we want our mapping to be as accurate as possible. Therefore,  I have written a separate Blog to explain you on how to achieve ~97% accuracy on EuroSat dataset.  
+Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-achieving-state-of-the-art-results-on-classifying-eurosat-satellite-images-91a9897f7433
+
+* I have conducted 2 experiments in this project:
+  * Exp1: Prepare data in a such a manner that Industrial and Residential is considered as one class and name it else and rest of the classes will be as it is.
