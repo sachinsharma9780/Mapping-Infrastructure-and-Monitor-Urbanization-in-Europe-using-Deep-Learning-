@@ -18,7 +18,7 @@ Install Gdal using: conda install gdal
 Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-achieving-state-of-the-art-results-on-classifying-eurosat-satellite-images-91a9897f7433
 
 * I have conducted 2 experiments in this project each for RGB Images and Multispectral Images:
- * Exp1: 
+  * Experiment1: 
  1. Prepare data in a such a manner that Industrial and Residential is considered as one class and name it else and rest of the classes will be as it is.
 2. Train your classifier with this dataset using the techniques describe in the blog. Script for this is available in code section under the name Ci_a_1.py
 3. Now we have a big tiff image of 10k*
