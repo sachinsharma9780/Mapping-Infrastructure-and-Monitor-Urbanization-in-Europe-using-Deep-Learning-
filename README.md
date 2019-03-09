@@ -26,5 +26,5 @@ Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-ac
 5. Give these cropped images to train classifier to get the predictions:
 ![cnn](https://user-images.githubusercontent.com/40523048/53294039-921b2d00-37df-11e9-9fde-04bfc92acc8b.JPG)
 6. A unique color image is created for each class, following is the color coding  
-![Classes](https://user-images.githubusercontent.com/40523048/54064917-c9470080-4219-11e9-932b-b076944a8cd9.JPG)
 
+![Classes](https://user-images.githubusercontent.com/40523048/54064993-9c471d80-421a-11e9-9251-d80dc10dcebb.JPG)
