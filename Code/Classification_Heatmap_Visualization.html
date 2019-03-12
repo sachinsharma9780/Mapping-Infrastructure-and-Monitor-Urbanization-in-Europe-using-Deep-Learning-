@@ -74,7 +74,7 @@
 }		
 	
 var arr = [];
-for(var i=3; i<7; i++){
+for(var i=3; i<8; i++){
     var url = "https://raw.githubusercontent.com/sachinsharma9780/Mapping-Infrastructure-and-Monitor-Urbanization-in-Europe-using-Deep-Learning-/master/Class_Heatmap_visln/city_"+(i)+".geojson";
     arr[i] = abc(url);
 }
@@ -89,7 +89,7 @@ for(var i=3; i<7; i++){
 var kyArr = [];
 Promise.all(arr).then((res)=>{
     console.log(res[3]);
-	for(var j = 3; j<7; j++){
+	for(var j = 3; j<8; j++){
 	    kyArr.push(L.geoJSON(res[j], {style:countriesStyle}).addTo(map));
 	}
 	map.fitBounds(kyArr[3].getBounds());
