@@ -47,10 +47,14 @@
 		         return {
 				         fillColor: getCountryColor(feature.properties.DN),
 						 weight : 2,
-					     opacity : 1,
-					     color : 'white',
+					     opacity : 0, #1
+					     border-color: none,
+						 background-color: none,
+						 background: none,
+						 border: none,
 					     dashArray : 3,
-					     fillOpacity : 0.7}
+						 fill: 'false',
+					     fillOpacity : 0} #0.7
 		}
 	    
         var abc = function(url){
