@@ -20,18 +20,18 @@ Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-ac
 * I have conducted 2 experiments in this project each for RGB Images and Multispectral Images:
  * Experiment1: 
  1. Prepare data in a such a manner that Industrial and Residential is considered as one class and name it else and rest of the classes will be as it is.
-2. Train your classifier with this dataset using the techniques describe in the blog. Script for this is available in code section under the name Ci_a_1.py
-3. Create Hierarchy of folders using creates_folder_hierarchy.py file to store the results in appropriate folders.
-4. Now we have a big tiff image(Ground Truth) of 10k 10k pixels, break this image into a small patches of 64*64 pixels as done using sliding_window_on_Big_Tiff_image.py file
-5. Give these cropped images to already trained classifier to get the predictions on 9 classes:
+2. Train your classifier with this dataset using the techniques describe in the blog. Script for this is available in code section under the name Experiment_a_1.py 
+3. Make one folder called cropped_imgs in your machine all results during sliding window approach will get stored in this folder. sliding_window_on_Big_Tiff_image.py will automatically create hierarchy of appropriate subfolders and store results accordingly. Now we have a big tiff image(Ground Truth) of 10k 10k pixels, break this image into a small patches of 64*64 pixels as done using sliding_window_on_Big_Tiff_image.py file. 
+4. Create Hierarchy of folders using creates_folder_hierarchy.py file to store the results in appropriate folders.
+5. Give these cropped images to already trained classifier to get the predictions on 9 classes(can be achieved using script class_map_automation_exp1):
 ![cnn](https://user-images.githubusercontent.com/40523048/53294039-921b2d00-37df-11e9-9fde-04bfc92acc8b.JPG)
-6. A unique color image is created for each class, following is the color coding:  
+6. A unique color image is created for each class, following is the color coding used:  
 
 ![Classes](https://user-images.githubusercontent.com/40523048/54064993-9c471d80-421a-11e9-9251-d80dc10dcebb.JPG)
 
 Note: Buildup class is collection of images from Residential and Intdustrial area. Step 5 and 6 can be achieved using class_map_automation(1).py file.
 
-7. Now we'll add georeference to these images which can be done using adding_georef_automation(1).py
+7. Now we'll add georeference to these images which can be done using adding_georef_automation _exp1.py.
 8. Finally, Merge all Classfication prediction maps to make one big image using merge_class_maps_and_prob_maps.py which will look like as following, below are the predictions done on Graz city of Austria: 
 
 ![Graz_heatmap](https://user-images.githubusercontent.com/40523048/54065158-b124b080-421c-11e9-96fd-1f4a9f8e1e3e.JPG)
