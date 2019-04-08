@@ -54,5 +54,8 @@ Probability Heatmap of Graz city looks like following where darker colors repres
 
 ![exp2](https://user-images.githubusercontent.com/40523048/55692055-9329a780-59a4-11e9-807e-c7b7652e6a60.JPG)
 
+7. same as step 7 and 8 of experiment 1. Following is the Classification Heatmap of experiment 2 on Graz city:
+
+![exp2_graz](https://user-images.githubusercontent.com/40523048/55692167-a6894280-59a5-11e9-9903-5ae44da3b31d.JPG)
 
 
