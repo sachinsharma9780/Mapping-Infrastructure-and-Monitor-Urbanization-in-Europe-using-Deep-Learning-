@@ -25,7 +25,9 @@ Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-ac
 4. Create Hierarchy of folders using creates_folder_hierarchy.py file to store the results in appropriate folders.
 5. Give these cropped images to already trained classifier to get the predictions on 9 classes(can be achieved using script class_map_automation_exp1):
 ![cnn](https://user-images.githubusercontent.com/40523048/53294039-921b2d00-37df-11e9-9fde-04bfc92acc8b.JPG)
-reference: https://arxiv.org/pdf/1709.00029.pdf
+                                  fig1: CNN classification visualization on Satellite images
+
+fig1: reference: https://arxiv.org/pdf/1709.00029.pdf
 
 6. A unique color image is created for each class, following is the color coding used:  
 
