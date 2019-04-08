@@ -25,6 +25,8 @@ Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-ac
 4. Create Hierarchy of folders using creates_folder_hierarchy.py file to store the results in appropriate folders.
 5. Give these cropped images to already trained classifier to get the predictions on 9 classes(can be achieved using script class_map_automation_exp1):
 ![cnn](https://user-images.githubusercontent.com/40523048/53294039-921b2d00-37df-11e9-9fde-04bfc92acc8b.JPG)
+reference: https://arxiv.org/pdf/1709.00029.pdf
+
 6. A unique color image is created for each class, following is the color coding used:  
 
 ![Classes](https://user-images.githubusercontent.com/40523048/54064993-9c471d80-421a-11e9-9251-d80dc10dcebb.JPG)
@@ -43,3 +45,12 @@ Note: For generating Probability Heatmaps all data preprocessing steps are same 
 Probability Heatmap of Graz city looks like following where darker colors represents prediction of particular class with very high probability like 99%(i.e. Dark blue color, blue), light colors like yellow represent prediction with low probability 60%-70%(yellow, orange):
 
 ![prob_heatmap](https://user-images.githubusercontent.com/40523048/54076734-dc57e000-42ae-11e9-9292-57a7ca2202f8.JPG)
+
+* Experiment 2:
+1. In this experiment from 10 classes we have separated Industrial and Residential as 2 classes and rest of the classes as Else class.
+2. Train your classifier with this dataset using the techniques describe in the blog. Script for this is available in code section under the name exp2_a_1.1.ipynb.
+3. 3 to 5 steps are same as experiment 1.
+6. Following is the Color coding for experiment 2:
+
+
+
