@@ -52,5 +52,7 @@ Probability Heatmap of Graz city looks like following where darker colors repres
 3. 3 to 5 steps are same as experiment 1.
 6. Following is the Color coding for experiment 2:
 
+![exp2](https://user-images.githubusercontent.com/40523048/55692055-9329a780-59a4-11e9-807e-c7b7652e6a60.JPG)
+
 
 
