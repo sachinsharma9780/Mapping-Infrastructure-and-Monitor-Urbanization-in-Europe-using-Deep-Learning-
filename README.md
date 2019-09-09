@@ -36,7 +36,7 @@ Note: Buildup class is collection of images from Residential and Intdustrial are
 7. Finally, Merge all Classfication prediction maps to make one big image using merge_class_maps_and_prob_maps.py which will look like as following,(Right side image is what I fed to the trained classifier to get the predictions) below are the predictions done on Graz city of Austria: 
 
 ![graz_classification](https://user-images.githubusercontent.com/40523048/64496798-124f3e80-d2a9-11e9-994a-215e5a801210.jpg)
-                        fig2: Classification Heatmap of Graz city(left) and satellite image of Graz city
+                        fig2: Classification Heatmap of Graz city(left) and its corresponding satellite image.
 
 8. You can retrive all Classification and Probability Heatmaps stored in different folders using retrieve_heatmaps.py file.
 
@@ -55,7 +55,12 @@ Probability Heatmap of Graz and Innsbruck cities looks like following where dark
 4. same as step 7 and 8 of experiment 1. Following is the Classification Heatmap of experiment 2 on Graz city:
 
 ![Screenshot from 2019-09-09 13-03-11](https://user-images.githubusercontent.com/40523048/64525938-53277180-d302-11e9-93e0-9dae88721aa2.png)
-fig3: Classification Heatmap of Graz city(left) and satellite image of Graz city conducted with experiment2. 
+      fig3: Classification Heatmap of Graz city(conducted with experiment2,left) and corresponding satellite image(right). 
+
+5. Now I have moved all the results to Open Street Map(OSM) by converting the results from tif->shp->geoJson files. Below you can see the resuls of experiment2 on OSM. To run the results in your browser you just need to download the classification_heatmap.html file and run it in your local browser.
+
+![Screenshot from 2019-09-09 14-42-29](https://user-images.githubusercontent.com/40523048/64531561-1e221b80-d310-11e9-8075-0b1edb4c3c9c.png)
+     fig4: Real Life Application of the project on Open Street Map
 
 
 
