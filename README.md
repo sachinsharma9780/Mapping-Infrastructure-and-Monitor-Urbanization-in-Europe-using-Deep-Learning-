@@ -38,7 +38,7 @@ Note: Buildup class is collection of images from Residential and Intdustrial are
 7. Now we'll add georeference to these images which can be done using adding_georef_automation _exp1.py.
 8. Finally, Merge all Classfication prediction maps to make one big image using merge_class_maps_and_prob_maps.py which will look like as following, below are the predictions done on Graz city of Austria: 
 
-![Graz_heatmap](https://user-images.githubusercontent.com/40523048/54065158-b124b080-421c-11e9-96fd-1f4a9f8e1e3e.JPG)
+![heatmaps](https://user-images.githubusercontent.com/40523048/64496589-f3e84380-d2a6-11e9-96fa-fe4081e137d2.JPG)
 
 9. You can retrive all Classification and Probability Heatmaps stored in different folders using retrieve_heatmaps.py file.
 
