@@ -63,5 +63,9 @@ fig3: Classification Heatmap of Graz city(conducted with experiment2,left) and c
 ![Screenshot from 2019-09-09 14-42-29](https://user-images.githubusercontent.com/40523048/64531561-1e221b80-d310-11e9-8075-0b1edb4c3c9c.png)
      fig4: Real Life Application of the project on Open Street Map. Fig shows the results of 5 cities of Austria: Graz, Innsbruck, Wien, Linz.
 
+# Project Presentation at DFKI:
+
+[Master Project at DFKI.pptx](https://github.com/sachinsharma9780/Near-State-of-the-Art-results-on-classifying-EuroSAT-satellite-images-using-Keras/files/3590575/Master.Project.at.DFKI.pptx)
+
 
 
