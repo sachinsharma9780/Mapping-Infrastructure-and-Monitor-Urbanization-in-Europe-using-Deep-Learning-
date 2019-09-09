@@ -55,7 +55,7 @@ Probability Heatmap of Graz and Innsbruck cities looks like following where dark
 4. same as step 7 and 8 of experiment 1. Following is the Classification Heatmap of experiment 2 on Graz city:
 
 ![Screenshot from 2019-09-09 13-03-11](https://user-images.githubusercontent.com/40523048/64525938-53277180-d302-11e9-93e0-9dae88721aa2.png)
-      fig3: Classification Heatmap of Graz city(conducted with experiment2,left) and corresponding satellite image(right). 
+          fig3: Classification Heatmap of Graz city(conducted with experiment2,left) and corresponding satellite image(right). 
 
 5. Now I have moved all the results to Open Street Map(OSM) by converting the results from tif->shp->geoJson files. Below you can see the resuls of experiment2 on OSM. To run the results in your browser you just need to download the classification_heatmap.html file and run it in your local browser.
 
