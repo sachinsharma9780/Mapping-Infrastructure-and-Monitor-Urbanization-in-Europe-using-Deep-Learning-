@@ -46,7 +46,7 @@ Note: For generating Probability Heatmaps all data preprocessing steps are same 
 
 Probability Heatmap of Graz city looks like following where darker colors represents prediction of particular class with very high probability like 99%(i.e. Dark blue color, blue), light colors like yellow represent prediction with low probability 60%-70%(yellow, orange):
 
-![prob_heatmap](https://user-images.githubusercontent.com/40523048/54076734-dc57e000-42ae-11e9-9292-57a7ca2202f8.JPG)
+![heatmap](https://user-images.githubusercontent.com/40523048/64496691-29416100-d2a8-11e9-8c7e-c36e4f006cc3.jpg)
 
 * Experiment 2:
 1. In this experiment from 10 classes we have separated Industrial and Residential as 2 classes and rest of the classes as Else class.
