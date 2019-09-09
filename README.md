@@ -29,19 +29,16 @@ Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-ac
 
 fig1: reference: https://arxiv.org/pdf/1709.00029.pdf
 
-6. A unique color image is created for each class, following is the color coding used:  
-
-![Classes](https://user-images.githubusercontent.com/40523048/54064993-9c471d80-421a-11e9-9251-d80dc10dcebb.JPG)
 
 Note: Buildup class is collection of images from Residential and Intdustrial area. Step 5 and 6 can be achieved using class_map_automation(1).py file.
 
-7. Now we'll add georeference to these images which can be done using adding_georef_automation _exp1.py.
-8. Finally, Merge all Classfication prediction maps to make one big image using merge_class_maps_and_prob_maps.py which will look like as following, below are the predictions done on Graz city of Austria: 
+6. Now we'll add georeference to these images which can be done using adding_georef_automation _exp1.py.
+7. Finally, Merge all Classfication prediction maps to make one big image using merge_class_maps_and_prob_maps.py which will look like as following, below are the predictions done on Graz city of Austria: 
 
 ![graz_classification](https://user-images.githubusercontent.com/40523048/64496798-124f3e80-d2a9-11e9-994a-215e5a801210.jpg)
 
 
-9. You can retrive all Classification and Probability Heatmaps stored in different folders using retrieve_heatmaps.py file.
+8. You can retrive all Classification and Probability Heatmaps stored in different folders using retrieve_heatmaps.py file.
 
 Note: For generating Probability Heatmaps all data preprocessing steps are same just in 6th step I have used create_prob_maps_of_n_tiff_files.py to generate probability heatmaps.
 
