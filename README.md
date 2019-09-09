@@ -60,7 +60,7 @@ Probability Heatmap of Graz and Innsbruck cities looks like following where dark
 5. Now I have moved all the results to Open Street Map(OSM) by converting the results from tif->shp->geoJson files. Below you can see the resuls of experiment2 on OSM. To run the results in your browser you just need to download the classification_heatmap.html file and run it in your local browser.
 
 ![Screenshot from 2019-09-09 14-42-29](https://user-images.githubusercontent.com/40523048/64531561-1e221b80-d310-11e9-8075-0b1edb4c3c9c.png)
-     fig4: Real Life Application of the project on Open Street Map
+     fig4: Real Life Application of the project on Open Street Map. Fig shows the results of 5 cities of Austria: Graz, Innsbruck, Wien, Linz.
 
 
 
