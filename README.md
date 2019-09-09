@@ -25,7 +25,7 @@ Link to the Blog: https://medium.com/@sachinsharma9780/hands-on-experience-on-ac
 4. Create Hierarchy of folders using creates_folder_hierarchy.py file to store the results in appropriate folders.
 5. Give these cropped images to already trained classifier to get the predictions on 9 classes(can be achieved using script class_map_automation_exp1):
 ![cnn](https://user-images.githubusercontent.com/40523048/53294039-921b2d00-37df-11e9-9fde-04bfc92acc8b.JPG)
-                                  fig1: CNN classification visualization on Satellite images
+fig1: CNN classification visualization on Satellite images
 
 fig1: reference: https://arxiv.org/pdf/1709.00029.pdf
 
@@ -36,7 +36,7 @@ Note: Buildup class is collection of images from Residential and Intdustrial are
 7. Finally, Merge all Classfication prediction maps to make one big image using merge_class_maps_and_prob_maps.py which will look like as following,(Right side image is what I fed to the trained classifier to get the predictions) below are the predictions done on Graz city of Austria: 
 
 ![graz_classification](https://user-images.githubusercontent.com/40523048/64496798-124f3e80-d2a9-11e9-994a-215e5a801210.jpg)
-                        fig2: Classification Heatmap of Graz city(left) and its corresponding satellite image.
+fig2: Classification Heatmap of Graz city(left) and its corresponding satellite image.
 
 8. You can retrive all Classification and Probability Heatmaps stored in different folders using retrieve_heatmaps.py file.
 
