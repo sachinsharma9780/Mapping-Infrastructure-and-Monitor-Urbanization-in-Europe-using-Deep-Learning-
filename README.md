@@ -8,7 +8,7 @@ https://medium.com/@sachinsharma9780/hands-on-experience-on-achieving-state-of-t
 
 # Installation:
 1) Clone this repository into your Local Machine
-2) Install the necessary libraries like Gdal, Keras, Image processing libraries(openCV) etc. Do this by making a new Enviornment in Conda.
+2) Install the necessary libraries like Gdal, Keras, Image processing libraries(openCV) etc. Do this by making a new enviornment using conda.
 
 Note about Gdal: The Geospatial Data Abstraction Library is a computer software library for reading and writing raster and vector geospatial data formats, and is released under the permissive X/MIT style free software license by the Open Source Geospatial Foundation.
 Install Gdal using: conda install gdal
