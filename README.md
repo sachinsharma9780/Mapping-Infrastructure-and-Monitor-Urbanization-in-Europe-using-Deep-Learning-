@@ -42,7 +42,7 @@ fig2: Classification Heatmap of Graz city(left) and its corresponding satellite 
 
 Note: For generating Probability Heatmaps all data preprocessing steps are same just in 6th step I have used create_prob_maps_of_n_tiff_files.py to generate probability heatmaps.
 
-Probability Heatmap of Graz and Innsbruck cities looks like following where darker colors represents prediction of particular class with very high probability like 99%(i.e. Dark blue color on the bar), as we move probabilty of predicted classes decreases(like yellow or red color):
+Probability Heatmap of Graz and Innsbruck cities looks like following where darker colors represents prediction of particular class with very high probability(Softmax Probabilites) like 99%(i.e. Dark blue color on the bar), as we move probabilty of predicted classes decreases(like yellow or red color):
 
 ![hm2](https://user-images.githubusercontent.com/40523048/64496878-b933da80-d2a9-11e9-9cd5-60dbbe5b7ea5.jpg)
 
